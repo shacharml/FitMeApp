@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CD469DDC2A5428B300949E0A /* FitMeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */; };
-		CD469DDE2A5428B300949E0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DDD2A5428B300949E0A /* ContentView.swift */; };
+		CD469DDE2A5428B300949E0A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DDD2A5428B300949E0A /* HomeView.swift */; };
 		CD469DE02A5428B300949E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD469DDF2A5428B300949E0A /* Assets.xcassets */; };
 		CD469DE32A5428B300949E0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD469DE22A5428B300949E0A /* Preview Assets.xcassets */; };
 		CD469DED2A5428B300949E0A /* FitMeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DEC2A5428B300949E0A /* FitMeAppTests.swift */; };
 		CD469DF72A5428B400949E0A /* FitMeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DF62A5428B400949E0A /* FitMeAppUITests.swift */; };
 		CD469DF92A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DF82A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift */; };
 		CD469E062A544B9000949E0A /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E052A544B9000949E0A /* WorkoutDetailView.swift */; };
+		CD469E082A5452BB00949E0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E072A5452BB00949E0A /* LoginView.swift */; };
+		CD469E0A2A54565500949E0A /* PrimaryButtonsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E092A54565500949E0A /* PrimaryButtonsStyle.swift */; };
+		CD469E0C2A546A3800949E0A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0B2A546A3800949E0A /* StringExtension.swift */; };
+		CD469E0E2A546EF600949E0A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0D2A546EF600949E0A /* SignUpView.swift */; };
+		CD469E102A5471C500949E0A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0F2A5471C500949E0A /* AuthView.swift */; };
+		CD469E122A54787500949E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD469E112A54787500949E0A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 /* Begin PBXFileReference section */
 		CD469DD82A5428B300949E0A /* FitMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitMeAppApp.swift; sourceTree = "<group>"; };
-		CD469DDD2A5428B300949E0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD469DDD2A5428B300949E0A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD469DDF2A5428B300949E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD469DE22A5428B300949E0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD469DE82A5428B300949E0A /* FitMeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitMeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +52,12 @@
 		CD469DF62A5428B400949E0A /* FitMeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitMeAppUITests.swift; sourceTree = "<group>"; };
 		CD469DF82A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitMeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD469E052A544B9000949E0A /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		CD469E072A5452BB00949E0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CD469E092A54565500949E0A /* PrimaryButtonsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonsStyle.swift; sourceTree = "<group>"; };
+		CD469E0B2A546A3800949E0A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CD469E0D2A546EF600949E0A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CD469E0F2A5471C500949E0A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		CD469E112A54787500949E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +108,17 @@
 		CD469DDA2A5428B300949E0A /* FitMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD469E112A54787500949E0A /* GoogleService-Info.plist */,
 				CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */,
-				CD469DDD2A5428B300949E0A /* ContentView.swift */,
+				CD469E072A5452BB00949E0A /* LoginView.swift */,
+				CD469DDD2A5428B300949E0A /* HomeView.swift */,
 				CD469E052A544B9000949E0A /* WorkoutDetailView.swift */,
 				CD469DDF2A5428B300949E0A /* Assets.xcassets */,
 				CD469DE12A5428B300949E0A /* Preview Content */,
+				CD469E092A54565500949E0A /* PrimaryButtonsStyle.swift */,
+				CD469E0B2A546A3800949E0A /* StringExtension.swift */,
+				CD469E0D2A546EF600949E0A /* SignUpView.swift */,
+				CD469E0F2A5471C500949E0A /* AuthView.swift */,
 			);
 			path = FitMeApp;
 			sourceTree = "<group>";
@@ -218,6 +236,9 @@
 				Base,
 			);
 			mainGroup = CD469DCF2A5428B300949E0A;
+			packageReferences = (
+				CD469E132A547A4A00949E0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CD469DD92A5428B300949E0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +257,7 @@
 			files = (
 				CD469DE32A5428B300949E0A /* Preview Assets.xcassets in Resources */,
 				CD469DE02A5428B300949E0A /* Assets.xcassets in Resources */,
+				CD469E122A54787500949E0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD469DDE2A5428B300949E0A /* ContentView.swift in Sources */,
+				CD469E0A2A54565500949E0A /* PrimaryButtonsStyle.swift in Sources */,
+				CD469DDE2A5428B300949E0A /* HomeView.swift in Sources */,
+				CD469E0C2A546A3800949E0A /* StringExtension.swift in Sources */,
+				CD469E0E2A546EF600949E0A /* SignUpView.swift in Sources */,
 				CD469E062A544B9000949E0A /* WorkoutDetailView.swift in Sources */,
+				CD469E082A5452BB00949E0A /* LoginView.swift in Sources */,
+				CD469E102A5471C500949E0A /* AuthView.swift in Sources */,
 				CD469DDC2A5428B300949E0A /* FitMeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,6 +608,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD469E132A547A4A00949E0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = CD469DD02A5428B300949E0A /* Project object */;
 }

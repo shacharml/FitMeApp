@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct FitMeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
         }
     }
 }
