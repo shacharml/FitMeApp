@@ -12,29 +12,66 @@ struct WorkoutDetailView: View {
     var workout: Workout
     
     var body: some View {
-        //vertical stack
-        VStack (alignment: .leading){
+        GeometryReader{geometry in
             
-            Text(workout.day)
-                .padding(.leading , 30)
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-            
-            Text(workout.type)
-                .padding(.leading , 30)
-                .font(.title)
-            
-            List(workout.routine , id: \.self){execise in
-                Text(execise)
-                
+            NavigationView(){
+                ScrollView {
+                    
+                    ZStack {
+                        Image(workout.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geometry.size.width, height: 500)
+                            .clipped()
+                        
+                        
+                        LinearGradient(gradient: Gradient(colors: [.clear ,Color(.systemBackground)]), startPoint: .top, endPoint: .bottom)
+                            .overlay(alignment: .bottomLeading){
+                                VStack(alignment: .leading){
+                                    Label(workout.day+" Workout" , systemImage: "calendar")
+                                        .font(.title2)
+                                        .fontWeight(.bold)
+                                }
+                            }
+                    }
+                    
+                    
+                    //vertical stack
+                    VStack (alignment: .leading , spacing: 6){
+                        
+                        Label(workout.type , systemImage: "dumbbell.fill")
+                        Label("30 mins" , systemImage: "timer")
+                        Label("230 cal" , systemImage: "flame.fill")
+                        
+                        Divider().background(.white)
+                        //TODO check why dont showing the list
+                        List{
+                            ForEach(workout.routine, id: \.self){execise in
+                                Text(execise)}
+                            
+                        }
+                        
+                        
+                        //                            List(workout.routine , id: \.self){execise in
+                        //                                Text(execise)}
+                        
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    
+                    
+                }.edgesIgnoringSafeArea(.top)
             }
-
+            
+            
         }
+        
     }
 }
 
 struct WorkoutDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView(workout: Workout(day: "Sunday", type: "Abs", image: "arms", routine: ["Warmup", "V-ups","Situps", "Cool Down"]))
+        WorkoutDetailView(workout: Workout(day: "Sunday", type: "ABS", image: "strong-woman", routine: ["Warmup", "V-ups","Situps", "Cool Down"]))
+            .preferredColorScheme(.dark)
     }
 }
