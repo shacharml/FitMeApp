@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LoginView: View {
+    @AppStorage("uid") var userID: String = ""
     @Binding var currentShowingView: String
     
     @State private var email: String = ""
@@ -60,7 +62,6 @@ struct LoginView: View {
                             Image(systemName: "lock")
                                 .foregroundColor(.black)
                             SecureField("Password", text: $password)
-                                .textContentType(.password)
                                 .foregroundColor(.black)
                             
                             Spacer()
@@ -81,7 +82,24 @@ struct LoginView: View {
                     Spacer()
                     
                     //Login button
-                    Button(action: {}){
+                    Button(action: {
+                        
+                        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                            if let error = error {
+                                print(error)
+                                return
+                            }
+                            
+                            //get the user login uid
+                            if let authResult = authResult {
+                                print(authResult.user.uid)
+                                withAnimation{
+                                    userID = authResult.user.uid
+                                }
+                            }
+                        }
+                        
+                    }){
                         HStack{
                             Spacer()
                             Text("Login")

@@ -21,6 +21,8 @@
 		CD469E0E2A546EF600949E0A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0D2A546EF600949E0A /* SignUpView.swift */; };
 		CD469E102A5471C500949E0A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0F2A5471C500949E0A /* AuthView.swift */; };
 		CD469E122A54787500949E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD469E112A54787500949E0A /* GoogleService-Info.plist */; };
+		CD469E172A54806300949E0A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CD469E162A54806300949E0A /* FirebaseAuth */; };
+		CD469E192A54826D00949E0A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD469E182A54826D00949E0A /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		CD469E0D2A546EF600949E0A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CD469E0F2A5471C500949E0A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		CD469E112A54787500949E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD469E142A54804100949E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD469E172A54806300949E0A /* FirebaseAuth in Frameworks */,
+				CD469E192A54826D00949E0A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 				CD469DEB2A5428B300949E0A /* FitMeAppTests */,
 				CD469DF52A5428B400949E0A /* FitMeAppUITests */,
 				CD469DD92A5428B300949E0A /* Products */,
+				CD469E152A54806300949E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,17 +114,18 @@
 		CD469DDA2A5428B300949E0A /* FitMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD469E142A54804100949E0A /* Info.plist */,
 				CD469E112A54787500949E0A /* GoogleService-Info.plist */,
 				CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */,
 				CD469E072A5452BB00949E0A /* LoginView.swift */,
 				CD469DDD2A5428B300949E0A /* HomeView.swift */,
 				CD469E052A544B9000949E0A /* WorkoutDetailView.swift */,
-				CD469DDF2A5428B300949E0A /* Assets.xcassets */,
-				CD469DE12A5428B300949E0A /* Preview Content */,
 				CD469E092A54565500949E0A /* PrimaryButtonsStyle.swift */,
 				CD469E0B2A546A3800949E0A /* StringExtension.swift */,
 				CD469E0D2A546EF600949E0A /* SignUpView.swift */,
 				CD469E0F2A5471C500949E0A /* AuthView.swift */,
+				CD469DDF2A5428B300949E0A /* Assets.xcassets */,
+				CD469DE12A5428B300949E0A /* Preview Content */,
 			);
 			path = FitMeApp;
 			sourceTree = "<group>";
@@ -148,6 +155,13 @@
 			path = FitMeAppUITests;
 			sourceTree = "<group>";
 		};
+		CD469E152A54806300949E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +178,10 @@
 			dependencies = (
 			);
 			name = FitMeApp;
+			packageProductDependencies = (
+				CD469E162A54806300949E0A /* FirebaseAuth */,
+				CD469E182A54826D00949E0A /* FirebaseFirestore */,
+			);
 			productName = FitMeApp;
 			productReference = CD469DD82A5428B300949E0A /* FitMeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -450,6 +468,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitMeApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitMeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,6 +497,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitMeApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitMeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -614,11 +634,24 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD469E162A54806300949E0A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD469E132A547A4A00949E0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CD469E182A54826D00949E0A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD469E132A547A4A00949E0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD469DD02A5428B300949E0A /* Project object */;
 }

@@ -2,7 +2,7 @@
 //  FitMeAppApp.swift
 //  FitMeApp
 //
-//  Created by Student30 on 04/07/2023.
+//  Created by Shachar Males .
 //
 
 import SwiftUI
@@ -10,9 +10,13 @@ import FirebaseCore
 
 @main
 struct FitMeAppApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            AuthView()
+            HomeView()
         }
     }
 }
