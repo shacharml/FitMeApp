@@ -14,6 +14,7 @@
 		CD469DED2A5428B300949E0A /* FitMeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DEC2A5428B300949E0A /* FitMeAppTests.swift */; };
 		CD469DF72A5428B400949E0A /* FitMeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DF62A5428B400949E0A /* FitMeAppUITests.swift */; };
 		CD469DF92A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469DF82A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift */; };
+		CD469E062A544B9000949E0A /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E052A544B9000949E0A /* WorkoutDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CD469DF22A5428B400949E0A /* FitMeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitMeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD469DF62A5428B400949E0A /* FitMeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitMeAppUITests.swift; sourceTree = "<group>"; };
 		CD469DF82A5428B400949E0A /* FitMeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitMeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD469E052A544B9000949E0A /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */,
 				CD469DDD2A5428B300949E0A /* ContentView.swift */,
+				CD469E052A544B9000949E0A /* WorkoutDetailView.swift */,
 				CD469DDF2A5428B300949E0A /* Assets.xcassets */,
 				CD469DE12A5428B300949E0A /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD469DDE2A5428B300949E0A /* ContentView.swift in Sources */,
+				CD469E062A544B9000949E0A /* WorkoutDetailView.swift in Sources */,
 				CD469DDC2A5428B300949E0A /* FitMeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
