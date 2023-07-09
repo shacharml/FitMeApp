@@ -20,9 +20,9 @@
 		CD469E0C2A546A3800949E0A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0B2A546A3800949E0A /* StringExtension.swift */; };
 		CD469E0E2A546EF600949E0A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0D2A546EF600949E0A /* SignUpView.swift */; };
 		CD469E102A5471C500949E0A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD469E0F2A5471C500949E0A /* AuthView.swift */; };
-		CD469E122A54787500949E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD469E112A54787500949E0A /* GoogleService-Info.plist */; };
 		CD469E172A54806300949E0A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CD469E162A54806300949E0A /* FirebaseAuth */; };
 		CD469E192A54826D00949E0A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD469E182A54826D00949E0A /* FirebaseFirestore */; };
+		CDAD8BA02A5ABBF3001D147A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDAD8B9F2A5ABBF3001D147A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,7 @@
 		CD469E0B2A546A3800949E0A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CD469E0D2A546EF600949E0A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CD469E0F2A5471C500949E0A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		CD469E112A54787500949E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CD469E142A54804100949E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CDAD8B9F2A5ABBF3001D147A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +113,7 @@
 		CD469DDA2A5428B300949E0A /* FitMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				CD469E142A54804100949E0A /* Info.plist */,
-				CD469E112A54787500949E0A /* GoogleService-Info.plist */,
+				CDAD8B9F2A5ABBF3001D147A /* GoogleService-Info.plist */,
 				CD469DDB2A5428B300949E0A /* FitMeAppApp.swift */,
 				CD469E072A5452BB00949E0A /* LoginView.swift */,
 				CD469DDD2A5428B300949E0A /* HomeView.swift */,
@@ -275,7 +273,7 @@
 			files = (
 				CD469DE32A5428B300949E0A /* Preview Assets.xcassets in Resources */,
 				CD469DE02A5428B300949E0A /* Assets.xcassets in Resources */,
-				CD469E122A54787500949E0A /* GoogleService-Info.plist in Resources */,
+				CDAD8BA02A5ABBF3001D147A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
