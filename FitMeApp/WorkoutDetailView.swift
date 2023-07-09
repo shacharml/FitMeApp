@@ -71,7 +71,7 @@ struct WorkoutDetailView: View {
 
 struct WorkoutDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView(workout: Workout(day: "Sunday", type: "ABS", image: "strong-woman", routine: ["Warmup", "V-ups","Situps", "Cool Down"]))
+        WorkoutDetailView(workout: Workout(id: "6", day: "Sunday", type: "ABS", image: "strong-woman", time: "45", routine: ["Warmup", "V-ups","Situps", "Cool Down"]))
             .preferredColorScheme(.dark)
     }
 }
