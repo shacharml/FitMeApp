@@ -21,7 +21,7 @@ struct HomeView: View {
 //        let workout = Workout(id: "4", day: "Monday", type: "Cardio", image: "workoutImage", time: "8:00 AM", routine: ["Exercise 1", "Exercise 2"])
 //           FirestoreManager.shared.addWorkout(workout: workout)
        
-        FirestoreManager.shared.getWorkouts()
+//        FirestoreManager.shared.getWorkouts()
        }
     
     
