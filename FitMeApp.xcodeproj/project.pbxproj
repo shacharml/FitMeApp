@@ -28,6 +28,7 @@
 		CDAD8BA62A5AC9B0001D147A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CDAD8BA52A5AC9B0001D147A /* FirebaseDatabase */; };
 		CDAD8BA82A5AD506001D147A /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CDAD8BA72A5AD506001D147A /* FirebaseDatabaseSwift-Beta */; };
 		CDAD8BAA2A5ADDD0001D147A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CDAD8BA92A5ADDD0001D147A /* FirebaseFirestoreSwift-Beta */; };
+		CDAD8BAC2A5C21C5001D147A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAD8BAB2A5C21C5001D147A /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CDAD8B9F2A5ABBF3001D147A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDAD8BA12A5AC4F5001D147A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CDAD8BA32A5AC6CB001D147A /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		CDAD8BAB2A5C21C5001D147A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				CD469DE12A5428B300949E0A /* Preview Content */,
 				CDAD8BA12A5AC4F5001D147A /* DataManager.swift */,
 				CDAD8BA32A5AC6CB001D147A /* FirestoreManager.swift */,
+				CDAD8BAB2A5C21C5001D147A /* TestView.swift */,
 			);
 			path = FitMeApp;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				CD469E0A2A54565500949E0A /* PrimaryButtonsStyle.swift in Sources */,
 				CD469DDE2A5428B300949E0A /* HomeView.swift in Sources */,
+				CDAD8BAC2A5C21C5001D147A /* TestView.swift in Sources */,
 				CDAD8BA42A5AC6CB001D147A /* FirestoreManager.swift in Sources */,
 				CD469E0C2A546A3800949E0A /* StringExtension.swift in Sources */,
 				CD469E0E2A546EF600949E0A /* SignUpView.swift in Sources */,

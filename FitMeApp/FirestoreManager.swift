@@ -18,7 +18,7 @@ class FirestoreManager: ObservableObject{
        private let db = Firestore.firestore()
        private let collectionName = "workouts" // Name of the collection in Firestore
        
-    @Published var list = [Workout]()
+    @Published var list : [Workout] = []
        private init() {} // Private initializer to prevent creating multiple instances
        
        func addWorkout(workout: Workout) {
