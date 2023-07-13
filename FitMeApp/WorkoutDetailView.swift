@@ -9,7 +9,12 @@ import SwiftUI
 
 struct WorkoutDetailView: View {
     
+    //pass from the home view- according to thr workout that you click on
     var workout: Workout
+//    @ObservedObject var viewModel = RealTimeFirebaseManager()
+//    init() {
+//        viewModel.loadWorkouts()
+//       }
     
     var body: some View {
         GeometryReader{geometry in
@@ -44,16 +49,10 @@ struct WorkoutDetailView: View {
                         Label("230 cal" , systemImage: "flame.fill")
                         
                         Divider().background(.white)
-                        //TODO check why dont showing the list
-                        List{
-                            ForEach(workout.routine, id: \.self){execise in
-                                Text(execise)}
-                            
-                        }
+
                         
-                        
-                        //                            List(workout.routine , id: \.self){execise in
-                        //                                Text(execise)}
+                        List(workout.routine , id: \.self){execise in
+                            Text(execise)}
                         
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -71,7 +70,8 @@ struct WorkoutDetailView: View {
 
 struct WorkoutDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView(workout: Workout(id: "6", day: "Sunday", type: "ABS", image: "strong-woman", time: "45", routine: ["Warmup", "V-ups","Situps", "Cool Down"]))
+        WorkoutDetailView(workout: Workout(id: "7", day: "Thursday", type: "Pilates", image: "push-ups", time: "45", routine: ["squats","warm up" ]))
             .preferredColorScheme(.dark)
+
     }
 }

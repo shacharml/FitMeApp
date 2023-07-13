@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  FitMeApp
-//
-//  Created by Student30 on 04/07/2023.
-//
-
 import SwiftUI
 import FirebaseAuth
 import Firebase
@@ -12,27 +5,30 @@ import Firebase
 struct HomeView: View {
     
     @AppStorage("uid") var userID: String = ""
+    @ObservedObject var viewModel = RealTimeFirebaseManager()
     
-    let workouts = workoutsData
-    @State private var workoutss: [Workout] = []
-    
-    
+//    let workouts = workoutsData
+//    @State private var workoutss: [Workout] = []
+   
+
     init() {
-//        let workout = Workout(id: "4", day: "Monday", type: "Cardio", image: "workoutImage", time: "8:00 AM", routine: ["Exercise 1", "Exercise 2"])
-//           FirestoreManager.shared.addWorkout(workout: workout)
-       
-//        FirestoreManager.shared.getWorkouts()
+        //save the data in the firebase
+        for workout in workoutsData {
+            viewModel.saveWorkout(workout)
+        }
+       // viewModel.saveWorkoutsData()
+        viewModel.loadWorkouts()
        }
     
     
     var body: some View {
      
         //if the user isnt login yet -> move to login page
-        if userID == ""{
-            AuthView()
-            let _ = print("auth")
-        }
-        else{
+//        if userID == ""{
+//            AuthView()
+//            let _ = print("auth")
+//        }
+//        else{
            //the user is loged in
             NavigationView {
                 ScrollView {
@@ -83,7 +79,7 @@ struct HomeView: View {
                         ScrollView(.horizontal, showsIndicators: true) {
                             //stack where the inner elements are stack horizontally
                             HStack (spacing: 20) {
-                                ForEach(workouts){ workout in
+                                ForEach(viewModel.workoutsList){ workout in
                                     //day card
                                     NavigationLink(destination: WorkoutDetailView(workout: workout)) {
                                         ZStack {
@@ -147,7 +143,7 @@ struct HomeView: View {
                 
                 }
             }
-        }
+       // }
     }
 
 }

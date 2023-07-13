@@ -22,15 +22,21 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct FitMeAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @AppStorage("uid") var userID: String = ""
     
-//    init(){
-//        FirebaseApp.configure()
-//    }
-//    
     var body: some Scene {
         WindowGroup {
-           TestView()
-            //HomeView()
+            if userID == ""{
+                //the user ist loges -> go ti the login or signup
+                AuthView()
+                let _ = print("auth")
+            }
+            else{
+                //TestView()
+                //the user is loged in
+                HomeView()
+            }
         }
     }
 }
+

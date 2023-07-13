@@ -32,15 +32,10 @@ struct TestView: View {
                     //display the routin list
                     VStack(alignment: .leading) {
                         Text("Routine:").font(.subheadline)
-                        
-                        ForEach(workout.routine, id: \.self){
-                            exercise in Text(" -\(exercise)")
-                                .font(.caption)
+                    
+                        List(workout.routine, id: \.self){
+                            exercise in Text(exercise)
                         }
-                        
-//                        List(workout.routine, id: \.self){
-//                            exercise in Text(exercise)
-//                        }
                     }
                 }
             }.onAppear{
@@ -62,7 +57,7 @@ struct TestView: View {
         //FirestoreManager.shared.list.removeAll()
         //FirestoreManager.shared.getWorkouts()
         //viewModel.saveWorkout(workoutsData[1])
-        viewModel.loadWorkouts()
+        //viewModel.loadWorkouts()
         
     }
 }
