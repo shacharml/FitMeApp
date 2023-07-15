@@ -11,10 +11,7 @@ struct WorkoutDetailView: View {
     
     //pass from the home view- according to thr workout that you click on
     var workout: Workout
-//    @ObservedObject var viewModel = RealTimeFirebaseManager()
-//    init() {
-//        viewModel.loadWorkouts()
-//       }
+
     
     var body: some View {
         GeometryReader{geometry in

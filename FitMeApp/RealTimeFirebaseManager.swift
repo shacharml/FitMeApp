@@ -27,6 +27,7 @@ class RealTimeFirebaseManager: ObservableObject{
                 let workouts = try JSONDecoder().decode([Workout].self, from: jsonData)
                 
                 self.workoutsList = workouts
+               // print(self._workoutsList)
             } catch{
                 print("error decode the data: \(error)")
             }

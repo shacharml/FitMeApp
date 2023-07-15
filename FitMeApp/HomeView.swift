@@ -22,7 +22,7 @@ struct HomeView: View {
                     VStack(alignment: .leading) {
                         //main Card view
                         ZStack {
-                            Image("fitness-workout")
+                            Image("pic7")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(height: 300)
@@ -78,7 +78,7 @@ struct HomeView: View {
                                                 Spacer()
                                                 
                                                 Text(workout.day)
-                                                    .font(.title)
+                                                    .font(.system(size: 27))
                                                     .fontWeight(.semibold)
                                                     .foregroundColor(.white)
                                                 Text(workout.type)

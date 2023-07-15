@@ -24,42 +24,14 @@ struct Workout:Identifiable, Codable{
 //    }
 //}
 
-
-
-//
-//let sundayWorkout = Workout(id: "1", day: "Sunday", type: "Cardio", image: "push-ups", time: "30 minutes", routine: ["Push-ups", "Running", "Jumping Jacks"])
-//let mondayWorkout = Workout(id: "2", day: "Monday", type: "Strength Training", image: "push-ups", time: "60 minutes", routine: ["Push-ups", "Squats", "Bench Press"])
-//let tuesdayWorkout = Workout(id: "3", day: "Tuesday", type: "Yoga", image: "push-ups", time: "45 minutes", routine: ["Push-ups", "Sun Salutations", "Warrior Poses"])
-//let wednesdayWorkout = Workout(id: "4", day: "Wednesday", type: "HIIT", image: "push-ups", time: "45 minutes", routine: ["Push-ups", "Burpees", "Mountain Climbers"])
-//let thursdayWorkout = Workout(id: "5", day: "Thursday", type: "Pilates", image: "push-ups", time: "45 minutes", routine: ["Push-ups", "Leg Circles", "Crisscross"])
-//let fridayWorkout = Workout(id: "6", day: "Friday", type: "Cardio", image: "push-ups", time: "30 minutes", routine: ["Push-ups", "Running", "Jumping Jacks"])
-//let saturdayWorkout = Workout(id: "7", day: "Saturday", type: "Strength Training", image: "push-ups", time: "60 minutes", routine: ["Push-ups", "Squats", "Bench Press"])
-//
-//let workoutsData = [sundayWorkout, mondayWorkout, tuesdayWorkout, wednesdayWorkout, thursdayWorkout, fridayWorkout, saturdayWorkout]
-
 let workoutsData = [
-    Workout(id: "0", day: "Sunday", type: "Chest", image: "push-ups", time: "45", routine: ["Warmup", "Bench Presses", "Cool Down"]),
-    Workout(id: "1", day: "Monday", type: "Back", image: "fitness-workout", time: "60", routine: ["Warmup", "Pull Ups", "Cool Down"]),
-    Workout(id: "2", day: "Tuesday", type: "Arms", image: "arms", time: "30", routine: ["Warmup", "Biseps", "Cool Down"]),
-    Workout(id: "3", day: "Wensday", type: "Legs", image: "fitness-workout", time: "25", routine: ["Warmup", "Squats", "Cool Down"]),
-    Workout(id: "4", day: "Sunday", type: "Chest", image: "push-ups", time: "45", routine: ["Warmup", "Bench Presses", "Cool Down"]),
-    Workout(id: "5", day: "Monday", type: "Back", image: "fitness-workout", time: "60", routine: ["Warmup", "Pull Ups", "Cool Down"]),
-    Workout(id: "6", day: "Tuesday", type: "Arms", image: "arms", time: "30", routine: ["Warmup", "Biseps", "Cool Down"])
+    Workout(id: "0", day: "Sunday", type: "Cardio", image: "pic6", time: "45", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.", "1. Running 200 meters (3 sets x 10 reps)", "2. Jumping jacks (4 sets x 15 reps)", "3. Burpees (3 sets x 12 reps)"]),
+    Workout(id: "1", day: "Monday", type: "Strength Training", image: "pic4", time: "60", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.", "1. Squats (4 sets x 8 reps)","2. Bench press (3 sets x 10 reps)", "3. Deadlifts (3 sets x 8 reps)"]),
+    Workout(id: "2", day: "Tuesday", type: "Yoga", image: "pic2", time: "30", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.","1. Downward-facing dog (3 sets x 10 reps)","2. Warrior II (3 sets x 12 reps)","3. Tree pose (2 sets x 8 reps)" ,"Cool Down"]),
+    Workout(id: "3", day: "Wensday", type: "HIIT", image: "pic5", time: "25", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.", "1. High knees (4 sets x 20 reps)","2. Mountain climbers (3 sets x 15 reps)","3. Plank jacks (3 sets x 12 reps)", "Cool Down"]),
+    Workout(id: "4", day: "Thursday", type: "Pilates", image: "pic3", time: "45", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.", "1. Roll-ups (3 sets x 10 reps)","2.  Leg circles (3 sets x 12 reps)","3. Swimming (4 sets x 8 reps)", "Cool Down"]),
+    Workout(id: "5", day: "Friday", type: "Crossfit", image: "pic1", time: "60", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.","1. Pull-ups (4 sets x 8 reps)","2. Thrusters (3 sets x 10 reps)","3.  Double unders (3 sets x 20 reps)", "Cool Down"]),
+    Workout(id: "6", day: "Saturday", type: "Cardio", image: "pic6", time: "30", routine: ["Warmup:\n10 minutes of light cardio (e.g., jogging or cycling) followed by dynamic stretching exercises for major muscle groups.", "1. Running 200 meters (3 sets x 10 reps)", "2. Jumping jacks (4 sets x 15 reps)", "3. Burpees (3 sets x 12 reps)"])
 ]
 
-let fullBodyWorkout = Workout(id: "7", day: "Full Body", type: "full body", image: "push-ups", time: "45", routine: ["Warmup", "Bench Presses", "Cool Down"])
-
-
-
-//Workout(id: "1", day: "Sunday", type: "Cardio", image: "push-ups", time: "30 minutes", routine: ["Push-ups", "Running", "Jumping Jacks"]),
-//Workout(id: "2", day: "Monday", type: "Strength Training", image: "push-ups", time: "60 minutes", routine: ["Push-ups", "Squats", "Bench Press"]),
-//Workout(id: "3", day: "Tuesday", type: "Yoga", image: "fitness-workout", time: "45 minutes", routine: ["Push-ups", "Sun Salutations", "Warrior Poses"]),
-//Workout(id: "4", day: "Wednesday", type: "HIIT", image: "arms", time: "45 minutes", routine: ["Push-ups", "Burpees", "Mountain Climbers"]),
-//Workout(id: "5", day: "Thursday", type: "Pilates", image: "push-ups", time: "45 minutes", routine: ["Push-ups", "Leg Circles", "Crisscross"]),
-//Workout(id: "6", day: "Friday", type: "Cardio", image: "push-ups", time: "30 minutes", routine: ["Push-ups", "Running", "Jumping Jacks"]),
-//Workout(id: "7", day: "Saturday", type: "Strength Training", image: "push-ups", time: "60 minutes", routine: ["Push-ups", "Squats", "Bench Press"])
-
-//
-
-
-
+let fullBodyWorkout = Workout(id: "7", day: "Full Body", type: "full body", image: "pic7", time: "45", routine: ["Warmup", "1. Squats: 3 sets x 12 reps","2. Push-ups: 3 sets x 10 reps","3. Lunges: 3 sets x 10 reps per leg","4. Bent-over rows: 3 sets x 12 reps","5. Shoulder press: 3 sets x 10 reps","6. Plank: 3 sets, hold for 30 seconds","7. Bicep curls: 3 sets x 10 reps","8. Tricep dips: 3 sets x 12 reps", "Cool Down"])
