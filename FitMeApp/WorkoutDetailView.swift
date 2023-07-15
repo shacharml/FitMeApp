@@ -41,8 +41,8 @@ struct WorkoutDetailView: View {
                         VStack (alignment: .leading , spacing: 6){
                             
                             Label(workout.type , systemImage: "dumbbell.fill")
-                            Label("30 mins" , systemImage: "timer")
-                            Label("230 cal" , systemImage: "flame.fill")
+                            Label("\(workout.time) mins" , systemImage: "timer")
+                            Label("\(workout.cal) cal" , systemImage: "flame.fill")
                             
                             Spacer()
                             
@@ -76,7 +76,7 @@ struct WorkoutDetailView: View {
 
 struct WorkoutDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView(workout: Workout(id: "7", day: "Thursday", type: "Pilates", image: "push-ups", time: "45", routine: ["squats","warm up" ]))
+        WorkoutDetailView(workout: Workout(id: "7", day: "Thursday", type: "Pilates", image: "push-ups", time: "45", routine: ["squats","warm up" ], cal: "260"))
             .preferredColorScheme(.dark)
 
     }
