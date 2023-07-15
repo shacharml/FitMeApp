@@ -21,45 +21,54 @@ struct WorkoutDetailView: View {
             
             NavigationView(){
                 ScrollView {
-                    
-                    ZStack {
-                        Image(workout.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: geometry.size.width, height: 500)
-                            .clipped()
-                        
-                        
-                        LinearGradient(gradient: Gradient(colors: [.clear ,Color(.systemBackground)]), startPoint: .top, endPoint: .bottom)
-                            .overlay(alignment: .bottomLeading){
-                                VStack(alignment: .leading){
-                                    Label(workout.day+" Workout" , systemImage: "calendar")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
+                        ZStack {
+                            Image(workout.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: geometry.size.width, height: 400)
+                                .clipped()
+                            
+                            
+                            LinearGradient(gradient: Gradient(colors: [.clear ,Color(.systemBackground)]), startPoint: .top, endPoint: .bottom)
+                                .overlay(alignment: .bottomLeading){
+                                    VStack(alignment: .leading){
+                                        Label(workout.day+" Workout" , systemImage: "calendar")
+                                            .font(.title2)
+                                            .fontWeight(.bold)
+                                    }
                                 }
+                        }
+                        
+                        
+                        //vertical stack
+                        VStack (alignment: .leading , spacing: 6){
+                            
+                            Label(workout.type , systemImage: "dumbbell.fill")
+                            Label("30 mins" , systemImage: "timer")
+                            Label("230 cal" , systemImage: "flame.fill")
+                            
+                            Spacer()
+                            
+                            Divider().background(.white)
+                            
+                            Spacer()
+                            LazyVStack(alignment: .leading, spacing: 6){
+                                Text("Routine: ").fontWeight(.bold).font(.title2)
+                                ForEach(workout.routine, id: \.self){execise in
+                                    Text(execise).font(.body)}
+                                
+//                                
+//                                List(workout.routine , id: \.self){execise in
+//                                    Text(execise)}
                             }
-                    }
-                    
-                    
-                    //vertical stack
-                    VStack (alignment: .leading , spacing: 6){
+                            
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
                         
-                        Label(workout.type , systemImage: "dumbbell.fill")
-                        Label("30 mins" , systemImage: "timer")
-                        Label("230 cal" , systemImage: "flame.fill")
-                        
-                        Divider().background(.white)
-
-                        
-                        List(workout.routine , id: \.self){execise in
-                            Text(execise)}
-                        
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal)
                     
-                    
-                }.edgesIgnoringSafeArea(.top)
+                    }.edgesIgnoringSafeArea(.top)
+                                
             }
             
             

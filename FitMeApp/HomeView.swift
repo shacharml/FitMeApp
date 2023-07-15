@@ -6,30 +6,17 @@ struct HomeView: View {
     
     @AppStorage("uid") var userID: String = ""
     @ObservedObject var viewModel = RealTimeFirebaseManager()
-    
-//    let workouts = workoutsData
-//    @State private var workoutss: [Workout] = []
-   
 
     init() {
         //save the data in the firebase
         for workout in workoutsData {
             viewModel.saveWorkout(workout)
         }
-       // viewModel.saveWorkoutsData()
         viewModel.loadWorkouts()
        }
     
     
     var body: some View {
-     
-        //if the user isnt login yet -> move to login page
-//        if userID == ""{
-//            AuthView()
-//            let _ = print("auth")
-//        }
-//        else{
-           //the user is loged in
             NavigationView {
                 ScrollView {
                     VStack(alignment: .leading) {
@@ -42,20 +29,22 @@ struct HomeView: View {
                             
                             
                             //Vertical Stack
-                            VStack {
-                                Spacer()
-                                
-                                Text("Full Body Workout")
-                                    .font(.largeTitle)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(.white)
-                                Text("For Beginners")
-                                    .fontWeight(.regular)
-                                    .foregroundColor(.white)
-                            }
-                            .padding()
-                            .frame(width: 380)
+                            NavigationLink(destination: WorkoutDetailView(workout: fullBodyWorkout)) {
+                                VStack {
+                                    Spacer()
+                                    
+                                    Text("Full Body Workout")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                    Text("For Beginners")
+                                        .fontWeight(.regular)
+                                        .foregroundColor(.white)
+                                }
+                                .padding()
+                                .frame(width: 380)
                             .background(Color(hue: 1.0, saturation: 0.048, brightness: 0.28, opacity: 0.384))
+                            }
                         }
                         .frame(width: 380 , height: 300)
                         .cornerRadius(20)
@@ -69,11 +58,7 @@ struct HomeView: View {
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .padding()
-                        
-//                        List (FirestoreManager.shared.list) { item in
-//                            Text(item.day)
-//                          let _ = print("\(item.day)")
-//                        }
+
                         
                         //the "Weeklt Plane" scroll - recycler view
                         ScrollView(.horizontal, showsIndicators: true) {

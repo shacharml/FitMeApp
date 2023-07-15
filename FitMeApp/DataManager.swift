@@ -47,6 +47,8 @@ let workoutsData = [
     Workout(id: "6", day: "Tuesday", type: "Arms", image: "arms", time: "30", routine: ["Warmup", "Biseps", "Cool Down"])
 ]
 
+let fullBodyWorkout = Workout(id: "7", day: "Full Body", type: "full body", image: "push-ups", time: "45", routine: ["Warmup", "Bench Presses", "Cool Down"])
+
 
 
 //Workout(id: "1", day: "Sunday", type: "Cardio", image: "push-ups", time: "30 minutes", routine: ["Push-ups", "Running", "Jumping Jacks"]),
